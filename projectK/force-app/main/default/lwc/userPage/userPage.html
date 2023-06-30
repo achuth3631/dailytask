@@ -1,0 +1,78 @@
+<template>
+    <form>
+        <lightning-card title="WELCOME TO EFICENSIT DAILY TASK PAGE">
+            <div class="slds-var-m-around_medium">
+                <ul>
+                    <li>
+                        <table>
+                            <tr>
+                                <th><label for="EmployeeNames">Employee Name :</label></th>
+                                <td><input type="text" id="EmployeeNames" value={employeeName} onchange={handleEmployeeName} /></td>
+                              </tr>
+                  
+                              <tr>
+                                <th><label for="CompanyNames">Company Name :</label></th>
+                                <td><input type="text" id="CompanyNames" value={companyName} onchange={handleCompanyName} /></td>
+                              </tr>
+                  
+                              <tr>
+                                <th><label for="Technologies">Technology :</label></th>
+                                <td><input type="text" id="Technologies" value={technology} onchange={handleTechnology} /></td>
+                              </tr>
+                  
+                              <tr>
+                                <th><label for="VendorCompanyNames">Vendor_Company_Name :</label></th>
+                                <td><input type="text" id="VendorCompanyNames" value={vendorCompanyName} onchange={handleVendorCompanyName} /></td>
+                              </tr>
+                  
+                              <tr>
+                                <th><label for="Vendor_Recruiter_Names">Vendor_Recruiter_Name :</label></th>
+                                <td><input type="text" id="Vendor_Recruiter_Names" value={vendorRecruiterName} onchange={handleVendorRecruiterName} /></td>
+                              </tr>
+                  
+                              <tr>
+                                <th><label for="Vendor_Recruiter_Emails">Vendor_Recruiter_Email :</label></th>
+                                <td><input type="email" id="Vendor_Recruiter_Emails" value={vendorRecruiterEmail} onchange ={handleVendorRecruiterEmail} /></td>
+                              </tr>
+                  
+                              <tr>
+                                <th><label for="Vendor_Recruiter_Numbers">Vendor_Recruiter_Number :</label></th>
+                                <td><input type="number" id="Vendor_Recruiter_Numbers" value={vendorRecruiterNumber} onchange={handleVendorRecruiterNumber} /></td>
+                              </tr>
+                  
+                              <tr>
+                                <th><label for="Client_Name">Client_Name :</label></th>
+                                <td><input type="text" id="Client_Name" value={clientName} onchange={handleClientName} /></td>
+                              </tr>
+                  
+                              <tr>
+                                <th><label for="Positions">Position :</label></th>
+                                <td><input type="text" id="Positions" value={position} onchange={handlePosition} /></td>
+                              </tr>
+                  
+                              <tr>
+                                <th><label for="Locations">Location :</label></th>
+                                <td><input type="text" id="Locations" value={location} onchange={handleLocation} /></td>
+                              </tr>
+                  
+                              <tr>
+                                <th><label for="Duration_of_Projects">Duration_of_Project :</label></th>
+                                <td><input type="text" id="Duration_of_Projects" value={durationOfProject} onchange={handleDurationOfProject} /></td>
+                              </tr>
+                  
+                              <tr>
+                                <th><label for="Requirements">Requirements :</label></th>
+                                <td><input type="text" id="Requirements" value={requirement} onchange={handleRequirement} /></td>
+                              </tr>
+              
+                              <tr>
+                                  <td><input type="reset" value="RESET" /></td>
+                                <td><lightning-button label="submit" onclick={createRecord} variant="brand"></lightning-button></td>
+                              </tr>
+                        </table>
+                    </li>
+                </ul>
+            </div>
+        </lightning-card>
+    </form>
+</template>
